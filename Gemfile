@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-group :devlopment do
+group :development do
   gem "sqlite3", "~> 1.4"
 end
 
