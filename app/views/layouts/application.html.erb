@@ -7,6 +7,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <script src="https://js.stripe.com/v3/"></script>
     <%= javascript_importmap_tags %>
   </head>
 
@@ -30,6 +31,7 @@
           <strong><%= @current_user.username %></strong>
           <%= link_to "All photos", items_path %>
           <%= link_to "Categories", categories_path %>
+          <%= link_to "Account", edit_account_path %>
           <%= link_to "Log out", session_path, data: { turbo_method: :delete } %>
         <% else %>
           <%= link_to "Sign up", new_user_path %>

@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 		@user = User.new(form_params)
 		
 		# check if the user can save
-		if @user.save
+		if @user.save_and_subscribe
 			# keep hold of user
 			session[:user_id] = @user.id
 			
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 	end
 	
 	def form_params
-		params.require(:user).permit(:name, :username, :email, :password, :password_confirmation)
+		params.require(:user).permit(:name, :username, :email, :password, :password_confirmation, :subscription_plan, :stripe_token)
 	end
 	
 end
