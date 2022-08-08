@@ -290,6 +290,7 @@ GEM
     ssrf_filter (1.0.7)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
+    stripe (7.0.0)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
@@ -334,6 +335,7 @@ DEPENDENCIES
   fog-aws
   importmap-rails
   jbuilder
+  jquery-rails
   mini_magick
   pg
   puma (~> 5.0)
@@ -344,6 +346,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  stripe
   turbo-rails
   tzinfo-data
   web-console

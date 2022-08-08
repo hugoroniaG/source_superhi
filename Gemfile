@@ -6,6 +6,9 @@ ruby "3.1.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 
+# jquery
+gem 'jquery-rails'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -66,6 +69,9 @@ gem "carrierwave"
 # gem "carrierwave-aws"
 gem "mini_magick"
 gem "fog-aws"
+
+ # add in stripe gem
+gem "stripe"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
